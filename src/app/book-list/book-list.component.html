@@ -1,3 +1,20 @@
-<p>
-  book-list works!
-</p>
+<div class="row m-2" *ngFor="let book of latest">
+	<div class="col-md-2">
+		<img class="img-fluid w-100" src="{{book.imgSource}}" alt="{{book.title}}"/>
+	</div>
+	<div class="col-md-10">
+		<h4>{{book.title}} <i *ngFor="let number of book.evaluation | times" class="fa fa-star"></i>
+			<a class="btn btn-outline-primary pull-right" data-toggle="collapse" href="#userComments" role="button" aria-expanded="false" aria-controls="collapseExample">
+			    Toggle user comments
+			</a>
+		</h4>
+		<p>{{book.description}}</p>
+		<hr/>
+		  <div class="row" *ngFor="let comment of book.comments">
+		  	<div class="col-md-12">
+		  		<h6>{{comment.user.firstname}}</h6>
+		  		<p>{{comment.text}}</p>
+		  	</div>
+		  </div>
+	</div>
+</div>

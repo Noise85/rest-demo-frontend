@@ -10,6 +10,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { OrderComponent } from './order/order.component';
 import { OrderListComponent } from './order/order-list/order-list.component';
 import { MenuComponent } from './header/menu/menu.component';
+import { TimesPipe } from './pipes/times.pipe';
 
 
 
@@ -23,7 +24,8 @@ import { MenuComponent } from './header/menu/menu.component';
     BookDetailComponent,
     OrderComponent,
     OrderListComponent,
-    MenuComponent
+    MenuComponent,
+    TimesPipe
   ],
   imports: [
     BrowserModule
