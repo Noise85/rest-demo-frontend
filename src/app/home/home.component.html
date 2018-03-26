@@ -1,85 +1,24 @@
 <div class="card-deck m-2">
-	<div class="card">
-	  <img class="card-img-top" src="https://dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B06169.png" alt="Learning angular">
+	<div class="card" *ngFor="let book of latest">
+	  <img class="card-img-top" src="{{book.imgSource}}" alt="{{book.title}}">
 	  <div class="card-body">
-	    <h5 class="card-title">Learning angular</h5>
-	    <p class="card-text">This book will take you in the undercover of the angular technology</p>
-	    <a href="#" class="btn btn-primary">Angular router</a>
+	    <h5 class="card-title"><span class="badge badge-info">New</span> {{book.title}}</h5>
+	    <p class="card-text">{{book.description}}</p>
 	  </div>
-	</div>
-	<div class="card">
-	  <img class="card-img-top" src="https://dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B06169.png" alt="Learning angular">
-	  <div class="card-body">
-	    <h5 class="card-title">Learning angular</h5>
-	    <p class="card-text">This book will take you in the undercover of the angular technology</p>
-	    <a href="#" class="btn btn-primary">Angular router</a>
-	  </div>
-	</div>
-	<div class="card">
-	  <img class="card-img-top" src="https://dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B06169.png" alt="Learning angular">
-	  <div class="card-body">
-	    <h5 class="card-title">Learning angular</h5>
-	    <p class="card-text">This book will take you in the undercover of the angular technology</p>
-	    <a href="#" class="btn btn-primary">Angular router</a>
-	  </div>
-	</div>
-	<div class="card">
-	  <img class="card-img-top" src="https://dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B06169.png" alt="Learning angular">
-	  <div class="card-body">
-	    <h5 class="card-title">Learning angular</h5>
-	    <p class="card-text">This book will take you in the undercover of the angular technology</p>
-	    <a href="#" class="btn btn-primary">Angular router</a>
-	  </div>
-	</div>
-	<div class="card">
-	  <img class="card-img-top" src="https://dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B06169.png" alt="Learning angular">
-	  <div class="card-body">
-	    <h5 class="card-title">Learning angular</h5>
-	    <p class="card-text">This book will take you in the undercover of the angular technology</p>
-	    <a href="#" class="btn btn-primary">Angular router</a>
+	  <div class="card-footer text-right">
+	  	<a href="#" class="btn btn-primary">Show book</a>
 	  </div>
 	</div>
 </div>
-
 <div class="card-deck m-2">
-	<div class="card">
-	  <img class="card-img-top" src="https://www.packtpub.com/sites/default/files/bookretailers/V06904_MockupCover_0.png" alt="Learning angular">
+	<div class="card" *ngFor="let book of advised">
+	  <img class="card-img-top" src="{{book.imgSource}}" alt="{{book.title}}">
 	  <div class="card-body">
-	    <h5 class="card-title">Learning angular</h5>
-	    <p class="card-text">This book will take you in the undercover of the angular technology</p>
-	    <a href="#" class="btn btn-primary">Angular router</a>
+	    <h5 class="card-title"><span class="badge badge-info">Advised</span> {{book.title}}</h5>
+	    <p class="card-text">{{book.description}}</p>
 	  </div>
-	</div>
-	<div class="card">
-	  <img class="card-img-top" src="https://www.packtpub.com/sites/default/files/bookretailers/V06904_MockupCover_0.png" alt="Learning angular">
-	  <div class="card-body">
-	    <h5 class="card-title">Learning angular</h5>
-	    <p class="card-text">This book will take you in the undercover of the angular technology</p>
-	    <a href="#" class="btn btn-primary">Angular router</a>
-	  </div>
-	</div>
-	<div class="card">
-	  <img class="card-img-top" src="https://www.packtpub.com/sites/default/files/bookretailers/V06904_MockupCover_0.png" alt="Learning angular">
-	  <div class="card-body">
-	    <h5 class="card-title">Learning angular</h5>
-	    <p class="card-text">This book will take you in the undercover of the angular technology</p>
-	    <a href="#" class="btn btn-primary">Angular router</a>
-	  </div>
-	</div>
-	<div class="card">
-	  <img class="card-img-top" src="https://www.packtpub.com/sites/default/files/bookretailers/V06904_MockupCover_0.png" alt="Learning angular">
-	  <div class="card-body">
-	    <h5 class="card-title">Learning angular</h5>
-	    <p class="card-text">This book will take you in the undercover of the angular technology</p>
-	    <a href="#" class="btn btn-primary">Angular router</a>
-	  </div>
-	</div>
-	<div class="card">
-	  <img class="card-img-top" src="https://www.packtpub.com/sites/default/files/bookretailers/V06904_MockupCover_0.png" alt="Learning angular">
-	  <div class="card-body">
-	    <h5 class="card-title">Learning angular</h5>
-	    <p class="card-text">This book will take you in the undercover of the angular technology</p>
-	    <a href="#" class="btn btn-primary">Angular router</a>
+	  <div class="card-footer text-right">
+	  	<a href="#" class="btn btn-primary">Show book</a>
 	  </div>
 	</div>
 </div>

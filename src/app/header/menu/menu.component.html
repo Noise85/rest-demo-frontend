@@ -5,17 +5,23 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <app-search></app-search>
+  	<div class="col-md-10">
+  		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2 w-100" type="search" placeholder="Search" aria-label="Search" />
+		</form>
+  	</div>
+  	<div class="col-md-2">
+		<ul class="navbar-nav mr-auto form-inline pull-right">
+	      <li class="nav-item">
+	        <a class="btn btn-primary" href="#"><span class="fa fa-user"></span> Login</a>
+	      </li>&nbsp;&nbsp;
+	      <li class="nav-item">
+	      	<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+	      		<span class="fa fa-shopping-basket"></span>&nbsp;&nbsp;
+	      		<span class="fa fa-badge">0</span>
+	      	</button>
+	      </li>
+	    </ul>
+  	</div>
   </div>
 </nav>
